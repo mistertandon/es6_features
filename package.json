@@ -1,0 +1,28 @@
+{
+    "__comment": " 1. How we can get transpiled scripts using babel js -  \"scripts\": {    \"build\": \"babel src -d transpile OR webpack \" },",
+    
+    
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "~6.14.0",
+    "babel-preset-es2016": "~6.11.3",
+    "webpack": "~2.1.0-beta.20",
+    "buble": "~0.13.2",
+    "buble-loader": "~0.3.0"
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "name": "ecmascript2015",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2016": "^6.11.3",
+    "webpack": "^1.13.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
