@@ -1,13 +1,11 @@
 
-function sum(...numbers) {
+function sum(augent, addend) {
 
-  return numbers.reduce(function (prev, next) {
-    return prev + next;
-  })
+  return augent + addend;
 }
 
-var result;
+var result = [1, 2];
 
-result = sum(1, 2, 3, 4, 5);
+result = sum(...result);
 
 console.log(`Sum of numbers is: ${result}`);

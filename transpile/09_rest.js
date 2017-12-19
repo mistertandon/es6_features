@@ -45,17 +45,22 @@
 /***/ (function(module, exports) {
 
 	
-	function sum(augent, addend) {
+	function sum() {
+	  var numbers = [], len = arguments.length;
+	  while ( len-- ) numbers[ len ] = arguments[ len ];
 	
-	  return augent + addend;
+	
+	  return numbers.reduce(function (prev, next) {
+	    return prev + next;
+	  });
 	}
 	
-	var result = [1, 2];
+	var result;
 	
-	result = sum.apply(void 0, result);
+	result = sum(1, 2, 3, 4, 5);
 	
 	console.log(("Sum of numbers is: " + result));
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=08_spread.js.map
+//# sourceMappingURL=09_rest.js.map
