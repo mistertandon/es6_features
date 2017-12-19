@@ -44,48 +44,23 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-	/**
-	 * Below code demonstrate how to use <promise> with error occured while process
-	 * asynchronous code in es6
-	 * 
-	 * Note: To get transpiled script
-	 * Step 1: Reach up to application root folder
-	 * Step 2: Run command > npm run build
-	 * 
-	 * Imp Note: Do the following modification into package.json
-	 * 
-	 *  "scripts": {
-	    "build": "webpack"
-	  }
 	
-	 */
+	function sum() {
+	  var numbers = [], len = arguments.length;
+	  while ( len-- ) numbers[ len ] = arguments[ len ];
 	
-	console.log('=>'.repeat(5)+ ' ES6 String API demostration '+'<='.repeat(5));
 	
-	var stringVal = 'hey, how are you.';
-	
-	if(stringVal.includes('how')){
-	    
-	    console.log('String contains <how> word.');
+	  return numbers.reduce(function (prev, next) {
+	    return prev + next;
+	  })
 	}
 	
-	if(stringVal.startsWith('hey')){
-	    
-	    console.log('String starts with <hey> word.');
-	}
+	var result;
 	
-	if(stringVal.endsWith('you.')){
-	    
-	    console.log('String ends with <you> word.');
-	}
+	result = sum(1, 2, 3, 4, 5);
 	
-	var repeatStr = "Danger";
-	/**
-	 * 
-	 * Below code block repeat <repeatStr> string two times i.e DangerDanger
-	 */
-	repeatStr.repeat(2);
+	console.log(("Sum of numbers is: " + result));
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=07_string_api.js.map
+//# sourceMappingURL=08_spread.js.map
