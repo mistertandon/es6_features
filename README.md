@@ -25,4 +25,4 @@ module.exports = {
     }
 };
 ```
-4. `$ ./node_modules/.bin/webpack`
+4. `$ ./node_modules/.bin/webpack` OR `$ npm run build`
